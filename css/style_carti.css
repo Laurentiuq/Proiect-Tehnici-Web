@@ -1,0 +1,71 @@
+body{
+    position: relative;
+    width: 99%;
+    height: 99%;
+    background-image: url(/images/dunes.jpg);
+    /* background-color: red; */
+}
+.container-galerie{
+    display:flex;
+    width: 100%;
+    height: 100%;
+    justify-content:space-evenly;
+    /* margin: 10px; */
+    flex-wrap: wrap;
+}
+
+.carte{
+    margin: 10px;
+    width:25%;
+    height:25%;
+}
+
+
+.container-galerie>img{
+    transition: width 2s, height 2s;
+}
+
+.container-galerie>.carte:hover{
+    width: 35%;
+    height: 35%;
+}
+
+#prima-carte{
+    position: relative;;
+}
+#prima-carte:before{
+    position: relative;
+    content: "Prima Carte->";
+    /* background-color: red; */
+}
+#ultima-carte:after{
+    content: "<-Ultima Carte";
+    /* background-color: red; */
+}
+
+@media screen and (max-width:600px) {
+    .container-galerie{
+        flex-direction: column;
+    }
+    .carte{
+        width: 90%;
+    }
+    .container-galerie>img{
+        transition: width 2s, height 2s;
+    }
+    
+    .container-galerie>.carte:hover{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .container-galerie>img{
+        transition: width 2s, height 2s;
+    }
+    .container-galerie>.carte:hover{
+        width: 40%;
+        height: 40%;
+    }
+}
