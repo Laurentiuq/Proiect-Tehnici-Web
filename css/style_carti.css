@@ -2,7 +2,8 @@ body{
     position: relative;
     width: 99%;
     height: 99%;
-    background-image: url(/images/dunes.jpg);
+    /* background-image: url(C:/Users/Laurentiu/Desktop/Proiect-Tehnici-Web/images/dunes.jpg); */
+    background-image: url("../images/dunes.jpg");
     /* background-color: red; */
 }
 .container-galerie{
