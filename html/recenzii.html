@@ -4,38 +4,60 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset = "utf-8"/>
+        <script src="https://use.fontawesome.com/04b9a1b2b6.js"></script>
+        <script src="https://kit.fontawesome.com/db688ea2cd.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="../css/style_recenzii.css">
         <title>Recenzie</title> 
     </head>
 <body>
-    <form>
+    <form class="forms">
         <label for="email">Email</label>
         <input type="text" placeholder="email" id="email" name = "email">
         <br>
         <label for="feedback">Feedback</label>
-        <input type="text" placeholder="feedback" id="feedback" name="feedback">
+        <textarea placeholder="Your review..." maxlength="800" rows = "5" cols = "60" name = "description" id="feedback"></textarea>
+        <!-- <input type="text" placeholder="feedback" id="feedback" name="feedback"> -->
         <br>
         <h4>Rating:</h4>
         <input type="radio" id="Rating1" name="Rating" value="1">
-        <label for="Rating1">1</label>
+
+        <label for="Rating1"><i class="fa-solid fa-star"></i></label>
         <br>
         <input type="radio" id="Rating2" name="Rating" value="2">
-        <label for="Rating2">2</label>
+        <label for="Rating2">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </label>
         <br>
         <input type="radio" id="Rating3" name="Rating" value="3">
-        <label for="Rating3">3</label>
+        <label for="Rating3">            
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </label>
         <br>
         <input type="radio" id="Rating4" name="Rating" value="4">
-        <label for="Rating4">4</label>
+        <label for="Rating4">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </label>
         <br>
         <input type="radio" id="Rating5" name="Rating" value="5">
-        <label for="Rating5">5</label>
+        <label for="Rating5">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </label>
         <br>
         <h3>Accepta:</h3>
         <input type="checkbox" id = "recomandari" name = "recomandri" value = "1">
         <label for="recomandari">Recomandari</label>
         <input type="checkbox" id = "notificari" name = "notificari" value = "1">
         <label for="notificari">Notificari</label>
-        
     </form>
     <input type="button" value="Submit">
     <br>
