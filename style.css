@@ -22,7 +22,6 @@ body{
     position: relative;
     grid-column-gap:1%;
     width: 100%;
-    /* height: 100%; */
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 98vh;
     justify-items: center;
@@ -78,7 +77,6 @@ body{
     justify-content: center;
     width:100%;
     height: 100%;
-    background-color:blue;
 }
 
 .recenzii{
@@ -89,7 +87,6 @@ body{
     grid-column: 4/5;
     width:100%;
     height: 100%;
-    background-color:yellow;
 }
 
 
