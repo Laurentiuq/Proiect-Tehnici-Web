@@ -6,6 +6,8 @@ body{
     background-image: url("../images/dunes.jpg");
     /* background-color: red; */
 }
+
+
 .container-galerie{
     display:flex;
     width: 100%;
@@ -43,6 +45,17 @@ body{
     content: "<-Ultima Carte";
     /* background-color: red; */
 }
+.lista-carti{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.lista-carti>li{
+    color: rgb(194, 191, 166);
+}
+
 
 @media screen and (max-width:600px) {
     .container-galerie{
