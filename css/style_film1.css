@@ -24,6 +24,7 @@
        
     }
 
+
     .navigation-bar{
         display:flex;
         align-self: center;
@@ -39,8 +40,14 @@
     .navigation-bar>ul>li:not(.dropdown){
         display: inline-block;
         visibility: hidden;
+        position: relative;
         margin:0px 0px 0px 5px;
         font-size:25px;
+    }
+
+    .navigtion-bar-content{
+        max-width: 12px;
+        max-height: 30px;
     }
     .navbar_logo{
         align-self: center;
@@ -51,7 +58,7 @@
     #imagine2{
         width: 90%;
     }
-
+  
     .surse>li>a{
         /* background-color: red; */
         position: relative;
@@ -61,7 +68,7 @@
 
 }
 
-@media  screen and (max-width:1000px) {
+@media  screen and (max-width:1000px) and (min-width:601px){
     .header{
         z-index: 2;
         width: 100%;
@@ -72,6 +79,7 @@
     }
     .navigation-bar{
         display:flex;
+        flex-direction: row;
         align-self: center;
         justify-self: center;
         margin-bottom: 10px;
@@ -82,6 +90,10 @@
         background-image: url("../images/nav_bck.jpg");
         z-index: 1;
     }
+.navigation-bar>ul{
+    display: flex;
+    flex-direction: row;
+}
     .navigation-bar>ul>li:not(.dropdown){
         display: inline-block;
         visibility: hidden;

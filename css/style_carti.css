@@ -57,6 +57,13 @@ body{
 }
 
 
+.pagina-anterioara{
+    font-size: 25px;
+    text-decoration: none;
+    align-self: center;
+    justify-self: center;
+}
+
 @media screen and (max-width:600px) {
     .container-galerie{
         flex-direction: column;

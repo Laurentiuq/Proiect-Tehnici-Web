@@ -1,3 +1,61 @@
 body{
+    display: grid;
+    /* position: fixed; */
+    grid-template-columns: repeat(7,1fr);
+    /* grid-template-rows: repeat(5,1fr); */
+    background-attachment: fixed;
     background-image: url(../images/atreides.png);
+}
+.informatii{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    grid-column: 3/6;
+    text-align: justify;
+    width: 100%;
+    height:100%;
+    color:rgb(180, 179, 148)
+}
+.informatii>p, h1, li{
+    position: relative;
+    left:-1000px;
+    animation-name: text;
+    /* animation-delay: 1s; */
+    animation-fill-mode: forwards;
+    animation-duration: 5s;
+}
+.informatii>img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.pagina-principala{
+    color:rgb(180,180,180);
+    text-decoration: none;
+    font-size: 20px;
+    align-self: center;
+}
+
+@keyframes text {
+    100%{left:0px;}
+    
+}
+
+@media screen and (max-width:600px){
+    .informatii{
+        grid-column: 1/7;
+    }
+    .informatii>p,h1,li{
+        left: 0px;
+        animation: none;
+    }
+
+}
+
+@media screen and (max-width:1000px){
+    .informatii{
+        grid-column: 2/7;
+    }
+
 }
